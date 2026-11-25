@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LA vs. NYC: How Does Your City Shape the Way You Eat and Live?</title>
+  <meta name="description" content="Same person, same appetite. What changed was the city. An infographic comparing food spending, commutes, access and variety in Los Angeles and New York City.">
+  <meta name="theme-color" content="#040404">
+  <style>
+    :root { color-scheme: dark; --bg: #040404; --ink: #ecebe8; --muted: #8e8e93; --la: #fbe07a; --nyc: #6b93f5; }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; background: var(--bg); color: var(--ink); font-family: "Space Grotesk", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+    .nav { position: sticky; top: 0; z-index: 5; display: flex; justify-content: center; gap: 4px; padding: 10px 14px; background: rgba(4,4,4,.82); -webkit-backdrop-filter: blur(14px); backdrop-filter: blur(14px); border-bottom: 1px solid #1d1d1f; }
+    .nav a { color: var(--muted); text-decoration: none; font-size: 12px; letter-spacing: .14em; text-transform: uppercase; padding: 7px 12px; border-radius: 999px; transition: color .2s, background-color .2s; }
+    .nav a:hover, .nav a:focus-visible { color: var(--ink); background: #161618; outline: none; }
+    .wrap { max-width: 1008px; margin: 0 auto; }
+    section { scroll-margin-top: 56px; }
+    section img { display: block; width: 100%; height: auto; }
+    footer { max-width: 1008px; margin: 0 auto; padding: 8px 20px 48px; color: var(--muted); font-size: 12px; letter-spacing: .04em; text-align: center; }
+    footer a { color: var(--ink); text-decoration: none; border-bottom: 1px solid #3a3a3c; }
+    /* the infographic is drawn for a wide page: on a phone, scroll sideways or pinch to zoom rather than shrink it to nothing */
+    @media (max-width: 860px) { .scroller { overflow-x: auto; -webkit-overflow-scrolling: touch; } .wrap { min-width: 860px; } .nav { justify-content: flex-start; overflow-x: auto; } }
+  </style>
+</head>
+<body>
+  <nav class="nav" aria-label="Chapters">
+    <a href="#top">Intro</a><a href="#afford">Afford</a><a href="#move">Move</a><a href="#access">Access</a><a href="#explore">Explore</a>
+  </nav>
+  <div class="scroller">
+    <main class="wrap" id="top">
+      <section id="intro"><img src="images/intro.webp" width="2016" height="434" alt="LA vs. NYC: How Does Your City Shape the Way You Eat and Live? In three months in New York I ate at nearly 200 cafes and restaurants. In Los Angeles I manage fewer than three a month. Same person, same appetite. What changed was the city."></section>
+      <section id="afford"><img src="images/afford.webp" width="2016" height="519" loading="lazy" alt="01 Afford. What does my food budget look like? Both cities spend more on food than the US household and earn more still, so food takes a smaller share: 8.8% in LA and 9.5% in New York against 9.7% nationally. Monthly food spending: Los Angeles $988, New York $976, US average $837."></section>
+      <section id="move"><img src="images/move.webp" width="2016" height="655" loading="lazy" alt="02 Move. What does my commute look like? 72 of every 100 people in LA drive to work; in New York 25 do. 59 New Yorkers in 100 reach work without a car, against 10 in LA. Two waffle charts, one worker per square."></section>
+      <section id="access"><img src="images/access.webp" width="2016" height="761" loading="lazy" alt="03 Access. What's around me? Four times the food places on two-thirds the land. 95% of New York has food in its own square kilometer, against 58% of LA. Dot maps: Los Angeles has 7,461 restaurants and 2,859 grocery stores; New York City has 30,611 restaurants and 11,224 grocery stores."></section>
+      <section id="explore"><img src="images/explore.webp" width="2016" height="1174" loading="lazy" alt="04 Explore. What kind of food scene do I get? Four of each city's top five cuisines match, and both run about six in seven independent. New York carries 340 chain brands to LA's 66, yet each averages the same 15 outlets. Chain share: 13% in Los Angeles, 16% in New York. Sources: BLS Consumer Expenditure Survey 2023 to 2024, Census ACS 2024, LA County Environmental Health, NYC DOHMH restaurant inspections, NY State Retail Food Stores, OpenStreetMap, US Census cartographic boundaries."></section>
+    </main>
+  </div>
+  <footer>Designed and built by <a href="https://evlynsu.com" target="_blank" rel="noopener">Evelyn Su</a></footer>
+</body>
+</html>
